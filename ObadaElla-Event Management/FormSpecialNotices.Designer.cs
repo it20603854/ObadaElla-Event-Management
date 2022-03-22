@@ -1,7 +1,7 @@
 ﻿
 namespace ObadaElla_Event_Management
 {
-    partial class Form_Add
+    partial class FormSpecialNotices
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace ObadaElla_Event_Management
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Add));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSpecialNotices));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -43,8 +43,14 @@ namespace ObadaElla_Event_Management
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.event_addnew = new System.Windows.Forms.Button();
-            this.event_addspecial = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.event_back = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.iconpanel.SuspendLayout();
@@ -57,6 +63,7 @@ namespace ObadaElla_Event_Management
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,12 +71,12 @@ namespace ObadaElla_Event_Management
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.MaximumSize = new System.Drawing.Size(1487, 225);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1487, 180);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 4;
             // 
             // label1
             // 
@@ -108,12 +115,12 @@ namespace ObadaElla_Event_Management
             this.iconpanel.Controls.Add(this.pictureBox3);
             this.iconpanel.Controls.Add(this.pictureBox2);
             this.iconpanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconpanel.Location = new System.Drawing.Point(0, 181);
+            this.iconpanel.Location = new System.Drawing.Point(-1, 179);
             this.iconpanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconpanel.MaximumSize = new System.Drawing.Size(81, 760);
             this.iconpanel.Name = "iconpanel";
             this.iconpanel.Size = new System.Drawing.Size(81, 749);
-            this.iconpanel.TabIndex = 3;
+            this.iconpanel.TabIndex = 5;
             // 
             // pictureBox7
             // 
@@ -153,7 +160,6 @@ namespace ObadaElla_Event_Management
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 8;
             this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox10
             // 
@@ -233,53 +239,110 @@ namespace ObadaElla_Event_Management
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // event_addnew
+            // panel2
             // 
-            this.event_addnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.event_addnew.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.event_addnew.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.event_addnew.ForeColor = System.Drawing.Color.Yellow;
-            this.event_addnew.Location = new System.Drawing.Point(428, 379);
-            this.event_addnew.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.event_addnew.MaximumSize = new System.Drawing.Size(316, 55);
-            this.event_addnew.MinimumSize = new System.Drawing.Size(316, 55);
-            this.event_addnew.Name = "event_addnew";
-            this.event_addnew.Size = new System.Drawing.Size(316, 55);
-            this.event_addnew.TabIndex = 7;
-            this.event_addnew.Text = "Add New Event";
-            this.event_addnew.UseVisualStyleBackColor = false;
-            this.event_addnew.Click += new System.EventHandler(this.event_addnew_Click);
+            this.panel2.BackColor = System.Drawing.Color.Yellow;
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.event_back);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(344, 204);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(928, 580);
+            this.panel2.TabIndex = 6;
             // 
-            // event_addspecial
+            // button3
             // 
-            this.event_addspecial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.event_addspecial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.event_addspecial.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.event_addspecial.ForeColor = System.Drawing.Color.Yellow;
-            this.event_addspecial.Location = new System.Drawing.Point(821, 379);
-            this.event_addspecial.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.event_addspecial.MaximumSize = new System.Drawing.Size(316, 55);
-            this.event_addspecial.MinimumSize = new System.Drawing.Size(316, 55);
-            this.event_addspecial.Name = "event_addspecial";
-            this.event_addspecial.Size = new System.Drawing.Size(316, 55);
-            this.event_addspecial.TabIndex = 8;
-            this.event_addspecial.Text = "Add Special Notices";
-            this.event_addspecial.UseVisualStyleBackColor = false;
-            this.event_addspecial.Click += new System.EventHandler(this.event_addspecial_Click);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.Color.Yellow;
+            this.button3.Location = new System.Drawing.Point(743, 379);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(158, 43);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "Clear";
+            this.button3.UseVisualStyleBackColor = false;
             // 
-            // Form_Add
+            // event_back
+            // 
+            this.event_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.event_back.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.event_back.ForeColor = System.Drawing.Color.Yellow;
+            this.event_back.Location = new System.Drawing.Point(743, 439);
+            this.event_back.Name = "event_back";
+            this.event_back.Size = new System.Drawing.Size(158, 43);
+            this.event_back.TabIndex = 11;
+            this.event_back.Text = "Back";
+            this.event_back.UseVisualStyleBackColor = false;
+            this.event_back.Click += new System.EventHandler(this.event_back_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.Yellow;
+            this.button1.Location = new System.Drawing.Point(743, 318);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(158, 43);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Submit";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(152, 97);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(543, 448);
+            this.textBox5.TabIndex = 9;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(25, 106);
+            this.label6.MinimumSize = new System.Drawing.Size(121, 46);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(121, 46);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Discription";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(152, 36);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(387, 27);
+            this.textBox2.TabIndex = 3;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(25, 35);
+            this.label3.MinimumSize = new System.Drawing.Size(121, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(121, 46);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Date";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // FormSpecialNotices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1481, 787);
-            this.Controls.Add(this.event_addspecial);
-            this.Controls.Add(this.event_addnew);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.iconpanel);
             this.Controls.Add(this.panel1);
-            this.Name = "Form_Add";
-            this.Text = "Add";
+            this.Name = "FormSpecialNotices";
+            this.Text = "Add Special Notices";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.iconpanel.ResumeLayout(false);
@@ -292,6 +355,8 @@ namespace ObadaElla_Event_Management
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -311,7 +376,13 @@ namespace ObadaElla_Event_Management
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button event_addnew;
-        private System.Windows.Forms.Button event_addspecial;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button event_back;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label3;
     }
 }

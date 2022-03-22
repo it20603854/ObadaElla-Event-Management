@@ -17,12 +17,23 @@ namespace ObadaElla_Event_Management
 
         private void event_addnew_Click(object sender, EventArgs e)
         {
-
+            FormAddNewEvent obj = new FormAddNewEvent();
+            obj.Show();
+            this.Hide();
         }
 
         private void event_addspecial_Click(object sender, EventArgs e)
         {
+            FormSpecialNotices obj = new FormSpecialNotices();
+            obj.Show();
+            this.Hide();
+        }
 
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            EventHome obj = new EventHome();
+            obj.Show();
+            this.Hide();
         }
     }
 }

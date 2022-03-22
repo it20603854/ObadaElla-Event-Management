@@ -8,14 +8,24 @@ using System.Windows.Forms;
 
 namespace ObadaElla_Event_Management
 {
-    public partial class FormAddNewEvent : Form
+    public partial class FormSpecialNotices : Form
     {
-        public FormAddNewEvent()
+        public FormSpecialNotices()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -25,6 +35,7 @@ namespace ObadaElla_Event_Management
             Form_Add obj = new Form_Add();
             obj.Show();
             this.Hide();
+
         }
     }
 }

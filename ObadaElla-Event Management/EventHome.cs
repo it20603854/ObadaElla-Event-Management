@@ -29,7 +29,9 @@ namespace ObadaElla_Event_Management
 
         private void event_add_Click(object sender, EventArgs e)
         {
-
+            Form_Add obj = new Form_Add();
+            obj.Show();
+            this.Hide();
         }
 
         private void event_view_Click(object sender, EventArgs e)
