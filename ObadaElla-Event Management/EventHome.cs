@@ -36,7 +36,9 @@ namespace ObadaElla_Event_Management
 
         private void event_view_Click(object sender, EventArgs e)
         {
-
+            FormEventView obj = new FormEventView();
+            obj.Show();
+            this.Hide();
         }
 
         private void event_specialnotice_Click(object sender, EventArgs e)
